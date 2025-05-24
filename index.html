@@ -5,50 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Event Agency</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 50px; background: #f5f5f5; }
-    img { max-width: 200px; margin-bottom: 20px; }
-    h1 { color: #333; }
-    p { color: #555; max-width: 600px; margin: 0 auto; }
-    a { display: inline-block; margin-top: 20px; color: white; background: #000; padding: 10px 20px; text-decoration: none; border-radius: 4px; }
-    
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
     .logo {
-      width: 200px; /* изменяй размер логотипа здесь */
+      width: 400px; /* Увеличили логотип в 4 раза (если раньше был 100px) */
+      max-width: 90vw;
       margin-bottom: 30px;
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 36px;
       margin-bottom: 10px;
+      color: #222;
     }
 
     p {
       font-size: 18px;
-      max-width: 600px;
-      margin: 0 auto 30px;
       color: #555;
+      max-width: 600px;
+      margin: 0 auto 20px;
     }
 
     a.button {
       display: inline-block;
+      margin-top: 30px;
       background-color: #0077cc;
       color: white;
       text-decoration: none;
-      padding: 12px 24px;
-      border-radius: 6px;
+      padding: 14px 28px;
+      border-radius: 8px;
       font-size: 16px;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     a.button:hover {
       background-color: #005fa3;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .logo {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Логотип" class="logo">
+  <img src="logo.png" alt="Логотип Chapo" class="logo">
   <h1>Добро пожаловать в Chapo</h1>
   <p>Мы организуем мероприятия, которые запоминаются.</p>
   <p>Напишите нам, чтобы получить презентацию.</p>
-  <a href="mailto:sales@chapo.ru">Запросить презентацию</a>
+  <a href="mailto:sales@chapo.ru" class="button">Запросить презентацию</a>
 </body>
 </html>
