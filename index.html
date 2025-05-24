@@ -62,13 +62,37 @@
         width: 90%;
       }
     }
+
+            /* Стили для подвала */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(243, 244, 246, 0.9); /* Полупрозрачный блеклый фон */
+            color: #4b5563; /* Серый цвет текста */
+            text-align: center;
+            padding: 20px 15px;
+            border-top: 1px solid #e5e7eb; /* Граница сверху */
+            backdrop-filter: blur(5px); /* Размытие фона */
+            font-size: 0.9em;
+        }
   </style>
 </head>
 <body>
   <img src="logo.png" alt="Логотип Chapo" class="logo">
   <h1>Добро пожаловать в Chapo</h1>
-  <p>Мы организуем мероприятия, которые запоминаются.</p>
-  <p>Напишите нам, чтобы получить презентацию.</p>
+  <p>Мы организуем мероприятия, которые запоминаются. Напишите нам, чтобы получить презентацию.</p>
   <a href="mailto:sales@chapo.ru" class="button">Запросить презентацию</a>
+      <!-- Подвал с годом -->
+    <footer>
+        <p>© <span id="currentYear"></span> Chapo. All rights reserved</p>
+    </footer>
+
+    <!-- Скрипт для автоматического обновления года -->
+    <script>
+        // Автоматически вставляем текущий год
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
